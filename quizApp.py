@@ -174,6 +174,8 @@ class start():
             self.start.destroy()
             env(self.master)
 
+        print(self.mode)
+
         with open('question.json', 'r+') as file:
             self.data = load(file)
 
@@ -181,6 +183,7 @@ class start():
         self.chineses = list(self.data.values())
 
         self.database = self.englishs.copy()
+        self.database_chinese = self.chineses.copy()
 
         self.qn = 1
         self.ques()
@@ -206,11 +209,12 @@ class start():
             option_list.append(option)
 
             val += 1
-    
+
         return option_list
 
     def display_opts(self):
         option_list = []
+
         if self.mode == 2:
             chinese_question = choice(self.chineses)
             idx = self.chineses.index(chinese_question)
@@ -219,7 +223,7 @@ class start():
 
             while len(option_list) < 4:
                 shuffle(self.database)
-                if self.database[0] not in option_list:
+                if self.database[0] not in option_list and self.data[self.database[0]] not in option_list:
                     option_list.append(self.database[0])
 
             shuffle(option_list)
@@ -232,9 +236,9 @@ class start():
             option_list.append(self.answer)
 
             while len(option_list) < 4:
-                shuffle(self.chineses)
-                if self.chineses[0] not in option_list:
-                    option_list.append(self.chineses[0])
+                shuffle(self.database_chinese)
+                if self.database_chinese[0] not in option_list:
+                    option_list.append(self.database_chinese[0])
 
             shuffle(option_list)
             self.question['text'] = english_question
@@ -254,29 +258,27 @@ class start():
 
                 shuffle(option_list)
                 self.question['text'] = chinese_question
-
             else:
                 english_question = choice(self.englishs)
                 self.answer = self.data[english_question]
+
                 option_list.append(self.answer)
 
                 while len(option_list) < 4:
-                    shuffle(self.chineses)
-                    if self.chineses[0] not in option_list:
-                        option_list.append(self.chineses[0])
+                    shuffle(self.database_chinese)
+                    if self.database_chinese[0] not in option_list:
+                        option_list.append(self.database_chinese[0])
 
                 shuffle(option_list)
                 self.question['text'] = english_question
 
         self.show.config(text='')
-
         self.select.set(0)
 
         for i in range(4):
             for j in ['text', 'value']:
                 self.opts[i]['state'] = NORMAL
                 self.opts[i][j] = option_list[i]
-        
 
     def check(self):
         for i in range(4):
