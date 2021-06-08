@@ -7,6 +7,8 @@ A very simple, user-friendly app.
 
 ![image](https://user-images.githubusercontent.com/73602058/121236368-72cd3e80-c8c8-11eb-84f4-c80c9d7780e6.png)
 
-# 1.1資料庫介面
+# 1-1.資料庫介面
 
+![image](https://user-images.githubusercontent.com/73602058/121237114-48c84c00-c8c9-11eb-8f29-1440f7763cbe.png)
 
+# 2.
