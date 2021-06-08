@@ -11,4 +11,11 @@ A very simple, user-friendly app.
 
 ![image](https://user-images.githubusercontent.com/73602058/121237114-48c84c00-c8c9-11eb-8f29-1440f7763cbe.png)
 
-# 2.
+# 2.開始介面
+
+![image](https://user-images.githubusercontent.com/73602058/121238155-60540480-c8ca-11eb-8127-804e0ba75f02.png)
+
+# 3.考試介面
+
+![image](https://user-images.githubusercontent.com/73602058/121238714-fe47cf00-c8ca-11eb-960f-9fe5d87ee486.png)
+
