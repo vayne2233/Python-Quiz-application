@@ -20,4 +20,4 @@ A very simple, user-friendly app.
 ![image](https://user-images.githubusercontent.com/73602058/121238714-fe47cf00-c8ca-11eb-960f-9fe5d87ee486.png)
 
 \# 作答錯誤會顯示正確答案
-
+\# 如要使用 請下載question.json檔或自己建立 檔名一定要是question副檔名要是.json 並放在同一個資料夾
