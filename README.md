@@ -1,6 +1,5 @@
 # Python-Quiz-application
 A very simple, user-friendly app. 
 
-![image](https://user-images.githubusercontent.com/73602058/121234970-e706e280-c8c6-11eb-8d0f-a32c885f2ad4.png)
-
+![image](https://user-images.githubusercontent.com/73602058/121235211-2f260500-c8c7-11eb-9ba1-570a058ce971.png)
 
