@@ -173,9 +173,7 @@ class start():
             showwarning('Warning', 'Choose your mode')
             self.start.destroy()
             env(self.master)
-
-        print(self.mode)
-
+            
         with open('question.json', 'r+') as file:
             self.data = load(file)
 
